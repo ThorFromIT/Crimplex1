@@ -1,0 +1,58 @@
+/* from 0-100, print every number. 
+For every number divisible by 3, print fizz. 
+For every number divisible by 5, print buzz.
+For every number divisible by 3 and 5 print fizzbuzz.
+Git Gud Sun */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+
+extern int x, y;
+extern bool string;
+
+
+int main()
+{
+
+	int x, y;
+	bool string;
+
+	x = -1;
+	y = 0;
+    string = false;
+    
+    
+while (x < 100) {
+
+x ++;
+y = x;
+
+if (y%3 == 0)
+{
+printf("fizz");
+string = true;
+}
+
+if (y%5 == 0)
+{
+printf("buzz");
+string = true;
+}
+
+if (string == false)
+{
+printf("%d \n", x);
+}
+else
+{
+    printf("\n");
+}
+
+string = false;
+
+}
+
+return 0;
+}
